@@ -205,9 +205,9 @@ menu nav a {
   border: 0;
   box-sizing: border-box;
   font-size: 18pt;
-  margin: 50px auto 100px;
+  margin: 60px auto 60px;
   max-width: 900px;
-  padding: 20px;
+  padding: 10px;
   background: #ffffff;
   min-height: 100vh;
   text-align: left;
@@ -248,6 +248,59 @@ h2 {
   height: 250px;
   width: 250px;
 }
+
+/*======================================================
+
+  Partner Page styling
+
+======================================================*/
+
+.partner-container {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 18pt;
+  margin: 30px 350px 30px 50px;
+  /* max-width: 1200px; */
+  padding: 5px;
+  background: #ffffff;
+  min-height: 100vh;
+  text-align: left;
+}
+
+.home-study-services {
+    border: solid #faa41a;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.attorney {
+    border: solid #f7ec13;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.consultant {
+    border: solid #6abd45;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.agency {
+    border: solid #3953a4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.resource {
+    border: solid #683695;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
 
 /*=====================================================
 
@@ -290,6 +343,18 @@ h2 {
   FAQ styling
 
 ==========================================================*/
+
+.faq-container {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 18pt;
+  margin: 50px auto 100px;
+  max-width: 900px;
+  padding: 20px;
+  background: #ffffff;
+  min-height: 100vh;
+  text-align: left;
+}
 
 details {
   border: 1px solid black;
@@ -345,6 +410,19 @@ details[open] summary:before {
   contact us Page styling
 
   ========================================================*/
+
+.contact-container {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 18pt;
+  margin: 50px auto 100px;
+  max-width: 900px;
+  padding: 20px;
+  background: #ffffff;
+  min-height: 100vh;
+  text-align: left;
+}
+
 
 .contact-form {
   background: #3953a4;
@@ -431,13 +509,13 @@ textarea {
 
 ===========================*/
 
-p:first-letter {
+/* p:first-letter {
   font-size: 200%;
 }
 
 p:first-line {
   color: red;
-}
+} */
 
 
 
