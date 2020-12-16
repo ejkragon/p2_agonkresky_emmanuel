@@ -1,0 +1,471 @@
+/*======================================================
+
+  universal styling
+
+=======================================================*/
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 18pt;
+  margin: 0;
+  padding: 0;
+}
+
+/*========================
+html {
+  scroll-behavior: smooth;
+}
+=========================*/
+
+h1,
+h2,
+h3 {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* ======
+body {
+  background: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+=========*/
+
+
+
+
+
+/*=======================================================
+
+  top header
+
+========================================================*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+.menu {
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.menu ul {
+  background: #683695;
+  list-style: none;
+}
+
+.menu > ul > li {
+  background: #683695;
+  display: inline-block;
+  margin-bottom: 1px;
+  position: relative;
+  vertical-align: top;
+  width: 24%;
+}
+
+.menu ul li a {
+  color: #ffffff;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.menu ul li a:hover {
+  background: #231f20;
+  color: #f7ec13;
+  transition: .5s
+}
+
+.sub-menu {
+  display: none;
+}
+
+.menu-item:hover .sub-menu {
+  background: #231f20;
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+.menu svg {
+  position: relative;
+  top: 12px;
+}
+
+/*=======================================================
+
+  bottom header (partner page only)
+
+========================================================*/
+
+menu {
+  background: #683695;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+menu nav ul li {
+  display: inline;
+}
+
+menu nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+.menu {
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.menu ul {
+  background: #683695;
+  list-style: none;
+}
+
+.menu > ul > li {
+  background: #683695;
+  display: inline-block;
+  margin-bottom: 1px;
+  position: relative;
+  vertical-align: top;
+  width: 24%;
+}
+
+.menu ul li a {
+  color: #ffffff;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.menu ul li a:hover {
+  background: #231f20;
+  color: #f7ec13;
+  transition: .5s
+}
+
+.sub-menu {
+  display: none;
+}
+
+.menu-item:hover .sub-menu {
+  background: #231f20;
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+.menu svg {
+  position: relative;
+  top: 12px;
+}
+
+
+/*=====================================================
+
+  body styling
+
+=======================================================*/
+
+.container {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 18pt;
+  margin: 50px auto 100px;
+  max-width: 900px;
+  padding: 20px;
+  background: #ffffff;
+  min-height: 100vh;
+  text-align: left;
+}
+
+h1,
+h2 {
+  font-family: 'Balsamiq Sans', cursive;
+  color: #3953a4;
+}
+
+.index {
+  margin-top: 260px;
+}
+
+.index,
+.about {
+  color: #6d6e71;
+  margin-right: 28%
+}
+
+.about {
+  padding-top: 30px;
+}
+
+.red-italics {
+  color: #ed2024;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.align-left {
+  float: left;
+  margin: 20px;
+}
+
+.small {
+  height: 250px;
+  width: 250px;
+}
+
+/*=====================================================
+
+  Gallery
+
+======================================================*/
+
+.gallery {
+  position: absolute;
+  right: 0;
+  top: 260px;
+  width: 325px;
+  animation: right-left 10s linear infinite normal;
+}
+
+@keyframes right-left {
+  from {
+    left: 120%;
+  }
+  to{
+    left: -20%;
+  }
+}
+
+/*=====================================================
+
+  ad styling
+
+======================================================*/
+
+.ad {
+  bottom: 300px;
+  position: fixed;
+  right: 10px;
+  width: 300px;
+}
+
+/*========================================================
+
+  FAQ styling
+
+==========================================================*/
+
+details {
+  border: 1px solid black;
+  background: #e6e7e8;
+  padding: 15px 20px;
+}
+
+summary {
+  font-size: 20px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+summary:hover {
+  cursor: pointer;
+  color: #3953a4;
+  transition: .3s;
+}
+
+details p {
+  padding: 15px 25px 10px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:before {
+  content: "\f0fe";
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 10px;
+  font-weight: normal;
+  color: #ed2024;
+  transition: .3s;
+}
+
+summary:hover:before {
+  color: #6abd45;
+  transition: .3s;
+}
+
+details[open] summary:before {
+  content: "\f146";
+}
+
+
+
+
+
+
+  /*======================================================
+
+  contact us Page styling
+
+  ========================================================*/
+
+.contact-form {
+  background: #3953a4;
+  padding: 20px;
+  max-width: 750px;
+  color: #f7ec13;
+  margin: 20px auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  color: #ffffff;
+  text-align: center;
+}
+
+h5,
+h6 {
+  color: #faa41a;
+}
+
+.p2container {
+  position: absolute;
+  margin-top: -338px;
+  margin-left: 442px;
+}
+
+.addresscontainer {
+  text-align: center;
+}
+
+.label_input_wrap {
+  display: block;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.reset input,
+.submit input {
+  padding: 5px 20px;
+}
+
+.reset input {
+  background: #ed2024;
+  color: white;
+}
+
+.submit input {
+  background: #6abd45;
+  color: white;
+}
+
+.reset,
+.submit {
+  display: inline;
+}
+
+.input-section,
+.add-input-section {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px 10px;
+}
+
+textarea {
+  padding: 10px 10px;
+}
+
+.select {
+  width: 185px;
+  padding: 8px 0;
+}
+
+
+/*==========================
+
+  testing pseudo elements
+
+===========================*/
+
+p:first-letter {
+  font-size: 200%;
+}
+
+p:first-line {
+  color: red;
+}
+
+
+
+/*==========================
+
+  footer styling
+
+===========================*/
+
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 40px 0;
+}
+
+footer a {
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #c5c2c2;
+    transition: .3s;
+}
+
+.website {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment #5: Contact Form</title>
+
+    <!--FAVIcon-->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="img/ico" />
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/d6cf7dbe19.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="center" src="images/dpm-logo-horizontal.jpg" alt="Daddy, Papa + Me Logo" />
+        </a>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li class="menu-item"><a href="index.html">About Us</a></li>
+          <li class="menu-item"><a href="partners">Partners<i class="fas fa-angle-double-down"></i></a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="home-study">Home Study</a></li>
+              <li class="menu-item"><a href="attorneys">Attorneys</a></li>
+              <li class="menu-item"><a href="consultants">Consultants</a></li>
+              <li class="menu-item"><a href="agencies">Agencies</a></li>
+              <li class="menu-item"><a href="adoption-resources">Adoption Resources</a></li>
+            </ul>
+          <li class="menu-item"><a href="faq.html">FAQ</a></li>
+          <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h3>Please Contact Us using the form below:</h3>
+        <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+
+          <h4>Parents Contact Information</h4>
+          <div class="p1container">
+            <h5>Parent #1</h5>
+            <div class="p1-first-name input-section">
+              <label for="p1firstname" class="label_input_wrap">Parent1 First Name:</label>
+              <input type="text" name="req_p1firstname" id="p1firstname" placeholder="Parent1 First Name" />
+            </div>
+
+            <div class="p1-last-name input-section">
+              <label for="p1lastname" class="label_input_wrap">Parent1 Last Name:</label>
+              <input type="text" name="req_p1lastname" id="p1lastname" placeholder="Parent1 Last Name" />
+            </div>
+
+            <div class="p1-e-mail input-section">
+              <label for="p1email" class="label_input_wrap">Parent1 Email:</label>
+              <input type="email" name="req_p1email" id="p1email" placeholder="Parent1 Email" />
+            </div>
+
+            <div class="p1-telephone input-section">
+              <label for="p1telephone" class="label_input_wrap">Parent1 Telephone:</label>
+              <input type="tel" name="req_p1telephone" id="p1telephone" placeholder="Parent1 Telephone" />
+            </div>
+          </div>
+
+          <div class="p2container">
+            <h5>Parent #2</h5>
+            <div class="p2-first-name input-section p2">
+              <label for="p2firstname" class="label_input_wrap">Parent2 First Name:</label>
+              <input type="text" name="p2firstname" id="p2firstname" placeholder="Parent2 First Name" />
+            </div>
+
+            <div class="p2-last-name input-section p2">
+              <label for="p2lastname" class="label_input_wrap">Parent2 Last Name:</label>
+              <input type="text" name="p2lastname" id="p2lastname" placeholder="Parent2 Last Name" />
+            </div>
+
+            <div class="p2-e-mail input-section p2">
+              <label for="p2email" class="label_input_wrap">Parent2 Email:</label>
+              <input type="email" name="p2email" id="p2email" placeholder="Parent2 Email" />
+            </div>
+
+            <div class="p2-telephone input-section p2">
+              <label for="p2telephone" class="label_input_wrap">Parent2 Telephone:</label>
+              <input type="tel" name="p2telephone" id="p2telephone" placeholder="Parent2 Telephone" />
+            </div>
+          </div>
+
+          <div class="addresscontainer">
+            <h5>Home Address</h5>
+            <div class="address1 add-input-section">
+              <label for="address1" class="label_input_wrap">Street Address:</label>
+              <input type="text" name="address1" id="address1" placeholder="Street Address" />
+            </div>
+
+            <div class="address2 add-input-section">
+              <label for="address2" class="label_input_wrap">Apt/Unit Number:</label>
+              <input type="text" name="address2" id="address2" placeholder="Apt/Unit Number" />
+            </div>
+
+            <div class="city add-input-section">
+              <label for="city" class="label_input_wrap">City:</label>
+              <input type="text" name="city" id="city" placeholder="City/Town" />
+            </div>
+
+            <div class="state add-input-section">
+              <label for="state" class="label_input_wrap">State:</label>
+              <input type="text" name="req_state" id="state" placeholder="Example: FL" />
+            </div>
+
+            <div class="zip add-input-section">
+              <label for="zip" class="label_input_wrap">Zip:</label>
+              <input type="text" name="req_zip" id="zip" placeholder="ZIP+4 " />
+            </div>
+          </div>
+
+          <div class="radiobutton input-section">
+            <h6>I have completed a Home Study within the past year</h6>
+            <input type="radio" name="hs1yes" value="hs1yes" id="hs1yes" /><label for="hs1yes">Yes</label>
+            <input type="radio" name="hs1no" value="hs1no" id="hs1no" /><label for="hs1no">No</label>
+          </div>
+
+          <div class="dropdown input-section">
+            <h6><label for="month" class="label_input_wrap">If you have a current Home Study, when does it expire?</label></h6>
+            <select name="month" id="month">
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+          </div>
+
+          <div class="radiobutton input-section">
+            <h6>If you do not have a current Home Study, how would you prefer to be contacted by those providing Home Studies?</h6>
+            <input type="radio" name="email" value="email" id="email" /><label for="email">Email</label>
+            <input type="radio" name="phone" value="phone" id="phone" /><label for="phone">Phone</label>
+          </div>
+
+          <div class="checkbox input-section">
+            <h6>I would like to be contacted by:</h6>
+            <input type="checkbox" name="partner" value="attorney" id="attorney" /><label for="attorney">Attorneys</label>
+            <input type="checkbox" name="partner" value="consultant" id="consultant" /><label for="consultant">Consultants</label>
+            <input type="checkbox" name="partner" value="agency" id="agency" /><label for="agency">Agencies</label>
+          </div>
+
+          <div class="comments input-section">
+            <h6><label for="comments" class="label_input_wrap">Comments:</label></h6>
+            <textarea name="comments" id="comments" cols="48" rows="5" placeholder="Enter your comments here:"></textarea>
+          </div>
+
+          <div class="reset input-section">
+            <input type="reset" value="Clear Form" />
+          </div>
+
+          <div class="submit input-section">
+            <input type="submit" value="Submit" />
+          </div>
+
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p class="website">Website by: Emmanuel J. Agon Kresky</p>
+      <p>Address: 5758 Masters Boulevard, Orlando, FL 32819-4018 | Phone: <a href="tel:407-225-2127">407-225-2127</a> | <a href="mailto:ejkragon@gmail.com">Email Me</a></p>
+
+      <div class="socialmedia">
+      <p> Follow me:</p>
+        <p>
+          <a href="https://www.facebook.com/manny.agon" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/mannyagon/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+          <a href="https://twitter.com/mannyagon" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
