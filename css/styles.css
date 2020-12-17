@@ -117,7 +117,7 @@ body {
 
 ========================================================*/
 
-menu {
+/* menu {
   background: #683695;
   position: fixed;
   left: 0;
@@ -182,7 +182,7 @@ menu nav a {
 }
 
 .menu-item:hover .sub-menu {
-  background: #231f20;
+  background: #683695;
   display: block;
   position: absolute;
   top: 50px;
@@ -192,7 +192,7 @@ menu nav a {
 .menu svg {
   position: relative;
   top: 12px;
-}
+} */
 
 
 /*=====================================================
@@ -201,13 +201,13 @@ menu nav a {
 
 =======================================================*/
 
-.container {
+.index-container {
   border: 0;
   box-sizing: border-box;
   font-size: 18pt;
-  margin: 60px auto 60px;
-  max-width: 900px;
-  padding: 10px;
+  margin: 15px auto 15px;
+  /* max-width: 1200px;*/
+  padding: 15px;
   background: #ffffff;
   min-height: 100vh;
   text-align: left;
@@ -219,15 +219,12 @@ h2 {
   color: #3953a4;
 }
 
-.index {
-  margin-top: 260px;
-}
 
-.index,
+/* .index,
 .about {
   color: #6d6e71;
   margin-right: 28%
-}
+} */
 
 .about {
   padding-top: 30px;
@@ -525,16 +522,18 @@ p:first-line {
 
 ===========================*/
 
+
 footer {
-    text-align: center;
-    background: black;
-    color: white;
-    padding: 40px 0;
+    border-top: solid #683695 24px;
+    text-align: left;
+    background: white;
+    color: black;
+    /* padding: 40px 0; */
 }
 
 footer a {
-    color: white;
-    font-size: 25px;
+    color: black;
+    font-size: 16px;
     margin: 0 5px;
     transition: .3s;
 }
@@ -544,6 +543,24 @@ footer a:hover {
     transition: .3s;
 }
 
-.website {
-    margin-bottom: 15px;
+.left-footer-container {
+    width: 25%;
+}
+
+.right-footer-container {
+  width: 75%;
+  text-align: center;
+  float: right;
+  margin-top: -180px;
+}
+
+.footer-nav {
+  position: relative;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.footer-item {
+    list-style: none;
+    text-decoration: none;
 }
