@@ -10,6 +10,7 @@
   font-size: 18pt;
   margin: 0;
   padding: 0;
+
 }
 
 /*========================
@@ -22,6 +23,19 @@ h1,
 h2,
 h3 {
   font-family: 'Balsamiq Sans', cursive;
+  color: #3953a4
+}
+
+h1 {
+  font-size: 36pt;
+}
+
+h2 {
+  font-size: 32pt;
+}
+
+h3 {
+  font-size: 28pt;
 }
 
 h4,
@@ -30,18 +44,26 @@ h6 {
   font-family: 'Open Sans', sans-serif;
 }
 
+h4 {
+  font-size: 24pt;
+}
+
+h5 {
+  font-size: 22pt;
+}
+
+h6 {
+  font-size: 20pt;
+  }
+
 p {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
-/* ======
 body {
-  background: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
-=========*/
+
 
 
 
@@ -111,88 +133,6 @@ body {
   top: 12px;
 }
 
-/*=======================================================
-
-  bottom header (partner page only)
-
-========================================================*/
-
-/* menu {
-  background: #683695;
-  position: fixed;
-  left: 0;
-  right: 0;
-}
-
-menu nav ul li {
-  display: inline;
-}
-
-menu nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0 20px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%
-}
-
-.menu {
-  margin: 0 auto;
-  max-width: 100%;
-  text-align: center;
-}
-
-.menu ul {
-  background: #683695;
-  list-style: none;
-}
-
-.menu > ul > li {
-  background: #683695;
-  display: inline-block;
-  margin-bottom: 1px;
-  position: relative;
-  vertical-align: top;
-  width: 24%;
-}
-
-.menu ul li a {
-  color: #ffffff;
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  transition: .5s;
-}
-
-.menu ul li a:hover {
-  background: #231f20;
-  color: #f7ec13;
-  transition: .5s
-}
-
-.sub-menu {
-  display: none;
-}
-
-.menu-item:hover .sub-menu {
-  background: #683695;
-  display: block;
-  position: absolute;
-  top: 50px;
-  width: 100%;
-}
-
-.menu svg {
-  position: relative;
-  top: 12px;
-} */
 
 
 /*=====================================================
@@ -211,14 +151,8 @@ menu nav a {
   background: #ffffff;
   min-height: 100vh;
   text-align: left;
+  color: #6d6e71;
 }
-
-h1,
-h2 {
-  font-family: 'Balsamiq Sans', cursive;
-  color: #3953a4;
-}
-
 
 /* .index,
 .about {
@@ -232,7 +166,7 @@ h2 {
 
 .red-italics {
   color: #ed2024;
-  font-size: 24px;
+  font-size: 12px;
   font-style: italic;
 }
 
@@ -262,6 +196,11 @@ h2 {
   background: #ffffff;
   min-height: 100vh;
   text-align: left;
+  color: #6d6e71;
+}
+
+.home-study::first-line {
+  color: #faa41a;
 }
 
 .home-study-services {
@@ -270,10 +209,18 @@ h2 {
     margin-bottom: 20px;
 }
 
+.attorneys::first-line {
+  color: #f7ec13;
+}
+
 .attorney {
     border: solid #f7ec13;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.consultants::first-line {
+  color: #6abd45;
 }
 
 .consultant {
@@ -282,10 +229,18 @@ h2 {
     margin-bottom: 20px;
 }
 
+.agencies::first-line {
+  color: #3953a4;
+}
+
 .agency {
     border: solid #3953a4;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.adoption-resources::first-line {
+  color: #683695;
 }
 
 .resource {
@@ -301,16 +256,15 @@ h2 {
 
 /*=====================================================
 
-  Gallery
+  CSSS3 Animation
 
 ======================================================*/
 
-.gallery {
-  position: absolute;
+.faq-ad {
+  position: relative;
   right: 0;
-  top: 260px;
-  width: 325px;
-  animation: right-left 10s linear infinite normal;
+  bottom: -25px;
+  animation: right-left 30s linear infinite normal;
 }
 
 @keyframes right-left {
@@ -333,6 +287,7 @@ h2 {
   position: fixed;
   right: 10px;
   width: 300px;
+  clear: both;
 }
 
 /*========================================================
@@ -351,6 +306,7 @@ h2 {
   background: #ffffff;
   min-height: 100vh;
   text-align: left;
+  color: #6d6e71;
 }
 
 details {
