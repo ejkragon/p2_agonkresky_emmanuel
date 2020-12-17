@@ -199,6 +199,16 @@ body {
   color: #6d6e71;
 }
 
+.partners::first-line {
+  color: #ed2024;
+}
+
+.partners {
+    border: solid #ed2024;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 .home-study::first-line {
   color: #faa41a;
 }
@@ -211,6 +221,7 @@ body {
 
 .attorneys::first-line {
   color: #f7ec13;
+  text-shadow: 0 2px 2px #939598;
 }
 
 .attorney {
@@ -249,36 +260,9 @@ body {
     margin-bottom: 20px;
 }
 
-
-
-
-
-
 /*=====================================================
 
-  CSSS3 Animation
-
-======================================================*/
-
-.faq-ad {
-  position: relative;
-  right: 0;
-  bottom: -25px;
-  animation: right-left 30s linear infinite normal;
-}
-
-@keyframes right-left {
-  from {
-    left: 120%;
-  }
-  to{
-    left: -20%;
-  }
-}
-
-/*=====================================================
-
-  ad styling
+  partner page / ad styling
 
 ======================================================*/
 
@@ -288,7 +272,16 @@ body {
   right: 10px;
   width: 300px;
   clear: both;
+  transition: 2s;
 }
+
+.ad:hover {
+  width: 600px;
+  transition: 2s;
+}
+
+
+
 
 /*========================================================
 
@@ -351,6 +344,35 @@ summary:hover:before {
 
 details[open] summary:before {
   content: "\f146";
+}
+
+
+/*=====================================================
+
+  CSSS3 Animation (FAQ page)
+
+======================================================*/
+
+.faq-ad {
+  position: relative;
+  right: 0;
+  bottom: -25px;
+  animation: right-left 30s linear infinite normal;
+  width: 260px;
+  height: 410px;
+  box-sizing: border-box;
+  padding: 5px;
+  box-shadow: 0 -1px 10px rgb(237 32 36/ .7);
+  transform-style: inherit;
+}
+
+@keyframes right-left {
+  from {
+    left: 120%;
+  }
+  to{
+    left: -20%;
+  }
 }
 
 
