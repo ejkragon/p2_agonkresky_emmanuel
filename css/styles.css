@@ -13,11 +13,10 @@
 
 }
 
-/*========================
 html {
   scroll-behavior: smooth;
 }
-=========================*/
+
 
 h1,
 h2,
@@ -151,7 +150,7 @@ body {
 .index-container {
   border: 0;
   box-sizing: border-box;
-  font-size: 18pt;
+  font-size: 14pt;
   margin: 15px auto 15px;
   max-width: 1800px;
   padding: 5px;
@@ -164,11 +163,6 @@ body {
 .home h1 {
   text-align: center;
 }
-/* .index,
-.about {
-  color: #6d6e71;
-  margin-right: 28%
-} */
 
 .gallery {
   font-style: italic;
@@ -181,14 +175,13 @@ body {
   margin-top: 30px;
 }
 
-
-.red-italics {
-  color: #ed2024;
-  font-size: 12px;
+.courthouse {
+  float: right;
+  clear: both;
+  color: #3953a4;
+  text-align: center;
   font-style: italic;
 }
-
-
 
 /*======================================================
 
@@ -201,7 +194,7 @@ body {
   box-sizing: border-box;
   font-size: 18pt;
   margin: 30px 350px 30px 50px;
-  max-width: 1200px;
+  max-width: 1800px;
   padding: 5px;
   background: #ffffff;
   min-height: 100vh;
@@ -356,6 +349,11 @@ details[open] summary:before {
   content: "\f146";
 }
 
+.red-italics {
+  color: #ed2024;
+  font-size: 12px;
+  font-style: italic;
+}
 
 /*=====================================================
 
