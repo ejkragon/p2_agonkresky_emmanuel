@@ -204,63 +204,123 @@ body {
 
 .partners::first-line {
   color: #ed2024;
+  text-align: center;
 }
 
 .partners {
-    border: solid #ed2024;
-    padding: 20px;
-    margin-bottom: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.home-study {
+  border: solid #faa41a;
+  padding: 5px;
+  margin-bottom: 20px;
 }
 
 .home-study::first-line {
-  color: #faa41a;
+  color: #3953a4;
+  text-shadow: 0 2px 2px #939598;
+  text-align: center;
+}
+
+.home-study {
+  border: solid #faa41a;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: #faa41a;
 }
 
 .home-study-services {
     border: solid #faa41a;
     padding: 20px;
     margin-bottom: 20px;
+    background-color: white;
 }
 
 .attorneys::first-line {
-  color: #f7ec13;
+  color: #683695;
   text-shadow: 0 2px 2px #939598;
+  text-align: center;
 }
 
-.attorney {
-    border: solid #f7ec13;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.consultants::first-line {
-  color: #6abd45;
-}
-
-.consultant {
-    border: solid #6abd45;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.agencies::first-line {
-  color: #3953a4;
-}
-
-.agency {
-    border: solid #3953a4;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.adoption-resources::first-line {
+.attorneys {
+  border: solid #f7ec13;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: #f7ec13;
   color: #683695;
 }
 
+.attorney {
+  border: solid #f7ec13;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  color: #6d6e71;  
+}
+
+.consultants::first-line {
+  color: #6d6e71;
+  text-shadow: 0 2px 2px #939598;
+  text-align: center;
+}
+
+.consultants {
+  border: solid #6abd45;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: #6abd45;
+}
+
+.consultant {
+  border: solid #6abd45;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.agencies::first-line {
+  color: #faa41a;
+  text-shadow: 0 2px 2px #939598;
+  text-align: center;
+}
+
+.agencies {
+  border: solid #3953a4;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: #3953a4;
+  color: #faa41a;
+}
+
+.agency {
+  border: solid #3953a4;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  color: #6d6e71;
+}
+
+.adoption-resources::first-line {
+  color: #f7ec13;
+  text-shadow: 0 2px 2px #939598;
+  text-align: center;
+}
+
+.adoption-resources {
+  border: solid #683695;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: #683695;
+  color: #6d6e71;
+}
+
 .resource {
-    border: solid #683695;
-    padding: 20px;
-    margin-bottom: 20px;
+  border: solid #683695;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
 }
 
 /*=====================================================
@@ -295,7 +355,7 @@ body {
 .faq-container {
   border: 0;
   box-sizing: border-box;
-  font-size: 18pt;
+  font-size: 14pt;
   margin: 50px auto 100px;
   max-width: 900px;
   padding: 20px;
@@ -312,7 +372,7 @@ details {
 }
 
 summary {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   transition: .3s;
 }
