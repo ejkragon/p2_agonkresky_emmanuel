@@ -133,11 +133,18 @@ body {
   top: 12px;
 }
 
+.gallery h2 {
+  font-size: 18pt;
+}
 
+.slider {
+  margin: 0 15px 0 15px;
+  text: white;
+}
 
 /*=====================================================
 
-  body styling
+  home page styling
 
 =======================================================*/
 
@@ -146,23 +153,34 @@ body {
   box-sizing: border-box;
   font-size: 18pt;
   margin: 15px auto 15px;
-  /* max-width: 1200px;*/
-  padding: 15px;
+  max-width: 1800px;
+  padding: 5px;
   background: #ffffff;
   min-height: 100vh;
   text-align: left;
   color: #6d6e71;
 }
 
+.home h1 {
+  text-align: center;
+}
 /* .index,
 .about {
   color: #6d6e71;
   margin-right: 28%
 } */
 
-.about {
-  padding-top: 30px;
+.gallery {
+  font-style: italic;
+  color: #3953a4;
+  text-align: center;
+  margin-top: 30px;
 }
+
+.about {
+  margin-top: 30px;
+}
+
 
 .red-italics {
   color: #ed2024;
@@ -170,15 +188,7 @@ body {
   font-style: italic;
 }
 
-.align-left {
-  float: left;
-  margin: 20px;
-}
 
-.small {
-  height: 250px;
-  width: 250px;
-}
 
 /*======================================================
 
@@ -191,7 +201,7 @@ body {
   box-sizing: border-box;
   font-size: 18pt;
   margin: 30px 350px 30px 50px;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 5px;
   background: #ffffff;
   min-height: 100vh;
@@ -499,6 +509,16 @@ p:first-line {
   footer styling
 
 ===========================*/
+
+.align-left {
+  float: left;
+  margin: 20px;
+}
+
+.small {
+  height: 250px;
+  width: 250px;
+}
 
 
 footer {
