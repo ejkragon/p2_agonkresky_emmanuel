@@ -10,13 +10,11 @@
   font-size: 18pt;
   margin: 0;
   padding: 0;
-
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 
 h1,
 h2,
@@ -62,10 +60,6 @@ p {
 body {
   font-family: 'Open Sans', sans-serif;
 }
-
-
-
-
 
 
 /*=======================================================
@@ -191,7 +185,6 @@ body {
 .partner-container {
   border: 0;
   box-sizing: border-box;
-  font-size: 18pt;
   margin: 30px 350px 30px 50px;
   max-width: 1800px;
   padding: 5px;
@@ -219,7 +212,6 @@ body {
 }
 
 .home-study {
-  /* border: solid #faa41a; */
   padding: 25px;
   margin-bottom: 50px;
   background-color: #faa41a;
@@ -239,7 +231,6 @@ body {
 }
 
 .attorneys {
-  border: solid #f7ec13;
   padding: 25px;
   margin-bottom: 50px;
   background-color: #f7ec13;
@@ -261,7 +252,6 @@ body {
 }
 
 .consultants {
-  border: solid #6abd45;
   padding: 25px;
   margin-bottom: 50px;
   background-color: #6abd45;
@@ -281,7 +271,6 @@ body {
 }
 
 .agencies {
-  border: solid #3953a4;
   padding: 25px;
   margin-bottom: 50px;
   background-color: #3953a4;
@@ -303,7 +292,6 @@ body {
 }
 
 .adoption-resources {
-  border: solid #683695;
   padding: 25px;
   margin-bottom: 50px;
   background-color: #683695;
@@ -338,8 +326,6 @@ body {
 }
 
 
-
-
 /*========================================================
 
   FAQ styling
@@ -349,7 +335,6 @@ body {
 .faq-container {
   border: 0;
   box-sizing: border-box;
-  font-size: 14pt;
   margin: 50px auto 100px;
   max-width: 900px;
   padding: 20px;
@@ -366,7 +351,6 @@ details {
 }
 
 summary {
-  font-size: 18px;
   font-weight: bold;
   transition: .3s;
 }
@@ -403,15 +387,9 @@ details[open] summary:before {
   content: "\f146";
 }
 
-.red-italics {
-  color: #ed2024;
-  font-size: 12px;
-  font-style: italic;
-}
-
 /*=====================================================
 
-  CSSS3 Animation (FAQ page)
+  CSSS3 Animation (AD/FAQ page)
 
 ======================================================*/
 
@@ -437,10 +415,11 @@ details[open] summary:before {
   }
 }
 
-
-
-
-
+.red-italics {
+  color: #ed2024;
+  font-size: 12px;
+  font-style: italic;
+}
 
   /*======================================================
 
@@ -451,7 +430,6 @@ details[open] summary:before {
 .contact-container {
   border: 0;
   box-sizing: border-box;
-  font-size: 18pt;
   margin: 50px auto 100px;
   max-width: 900px;
   padding: 20px;
@@ -459,7 +437,6 @@ details[open] summary:before {
   min-height: 100vh;
   text-align: left;
 }
-
 
 .contact-form {
   background: #3953a4;
@@ -469,17 +446,17 @@ details[open] summary:before {
   margin: 20px auto;
 }
 
-h3 {
+.contact-container h3 {
   text-align: center;
 }
 
-h4 {
+.contact-container h4 {
   color: #ffffff;
   text-align: center;
 }
 
-h5,
-h6 {
+.contact-container h5,
+.contact-container h6 {
   color: #faa41a;
 }
 
@@ -542,22 +519,6 @@ textarea {
 
 /*==========================
 
-  testing pseudo elements
-
-===========================*/
-
-/* p:first-letter {
-  font-size: 200%;
-}
-
-p:first-line {
-  color: red;
-} */
-
-
-
-/*==========================
-
   footer styling
 
 ===========================*/
@@ -572,13 +533,11 @@ p:first-line {
   width: 250px;
 }
 
-
 footer {
     border-top: solid #683695 24px;
     text-align: left;
     background: white;
     color: black;
-    /* padding: 40px 0; */
 }
 
 footer a {
