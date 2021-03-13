@@ -8,7 +8,7 @@ Web Design Principles
 ## Notes for Heather
 I know I need to redo the menus as the hamburger is stuck in the open position.
 
-I also need to convert all of my font sizes which are still in px. 
+I also need to convert all of my font sizes which are still in px.
 
 ## Resources
 * Duckett, J. (2015). HTML & CSS: Design and build websites. Indianapolis, IN: John Wiley & Sons.
@@ -18,6 +18,7 @@ I also need to convert all of my font sizes which are still in px.
 * https://css-tricks.com/making-width-and-flexible-items-play-nice-together/
 * https://stackoverflow.com/questions/4622808/html-changing-colors-of-specific-words-in-a-string-of-text
 * https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+* https://lokeshdhakar.com/projects/lightbox2/
 
 
 
