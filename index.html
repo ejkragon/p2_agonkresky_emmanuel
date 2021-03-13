@@ -14,6 +14,13 @@
     <title>Daddy, Papa + Me About Us</title>
 
     <meta charset="utf-8" />
+
+    <!--RWD-->
+    <meta name="viewport" content="width=device, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--SEO-->
     <meta name="keywords" content="gay, Florida, adopting, adoption, couples, attorneys, consultants, agencies, resources" />
     <meta name="description" content="Daddy, Papa + Me is a website created to help guide Gay Couples in Florida through the Infant Adoption Process." />
 
@@ -21,14 +28,14 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="img/ico" />
 
     <!--stylesheet-->
-    <link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
+    <!-- <link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick-theme.css"> -->
     <link rel="stylesheet" href="css/styles.css">
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/d6cf7dbe19.js" crossorigin="anonymous"></script>
@@ -39,127 +46,112 @@
 
   </head>
 
-  <body>
-    <header class="top-header">
-      <div class="logo-container">
-        <a href="index.html">
-          <img class="center" src="images/dpm-logo-horizontal.jpg" alt="Daddy, Papa + Me Logo" />
-        </a>
-      </div>
+  <body class="site">
+    <!-- <div id="container"> -->
 
-      <nav class="menu">
-        <ul>
-          <li class="menu-item"><a href="#about-us">About Us</a></li>
-          <li class="menu-item"><a href="partners.html">Partners</a></li>
-          <li class="menu-item"><a href="faq.html">FAQ</a></li>
-          <li class="menu-item"><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <a href="index.html" ></a><img class="logo" src="images/dpm-logo-horizontal.jpg" alt="Daddy, Papa + Me Logo" />
+
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+
+    <nav class="hamburger-menu">
+      <ul>
+        <li><a href="#index.html">About Us</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#index.html">About Us</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="desktop-flex site-content">
+
+    <div class="figure-flex">
+      <figure>
+        <img src="images/DPMhosp.jpg" alt="Daddy, Papa + Me at the Hospital the day after I was born" />
+        <figcaption>One Day Old Sebastian</figcaption>
+    </figure>
+    </div>
+
 
     <main>
-      <div class="index-container">
-        <section class="home">
-          <h1>Guiding Gay Couples in Florida through the Infant Adoption Process!</h1>
 
-          <p>Daddy, Papa, Father, Papi, or whatever you grew up calling your male parental unit, many of those who are gay never thought we would hear someone calling us by one of those names. As a matter of fact, for those of us in Florida, we were constitutionally banned from adopting until 2010. </p>
-          <br>
-          <p>Thankfully, things have changed for the better, but let's face it, for any couple, adoption can be a daunting process. I'm hoping to help change that. My husband, Nick, and I had the benefit of working with Amy Imber with Connecting Hears Adoption Services and she was instrumental in helping us adopt our son.</p>
-          <br>
-          <p>My goal is to help share some of our learnings with others who are starting on their adoption journeys. While this site is for a school project, the names and contact information of the attorneys, consultants, agencies, and adoption resources are real. Only the "ads" are made up as those companies don't exist.</p>
-          <br>
-          <p>While you are here, check out the photo gallery below. Amy also helped our friends in the pictures and countless others in Florida. Oh, and if you don't think you are the target demographic for this site, rest assured that the partners listed on this site are committed to inclusivity!</p>
-        </section>
+      <section>
+        <h1>Daddy, Papa...</h1>
 
-        <section class="gallery">
-          <h2>Picture Gallery</h2>
-          <p>Click and slide through the pictures of our families. Click on the titles of the pictures to enlarge the images.</p>
-          <div class="slider">
+        <article>
 
-            <div>
-              <a href="images/RR2.jpg" data-lightbox="Click to Enlarge Pics" data-title="Daddy, Papa + Me in Kitchen">Daddy, Papa + Me in Kitchen</a><img src="images/RR2.jpg" alt="Daddy, Papa + Me in Kitchen" width="600"/>
+            <div class="main-flex">
+              <p>...or whatever you grew up calling your male parental unit, many of those who are gay never thought we would hear someone calling us by one of those names. As a matter of fact, for those of us in Florida, we were constitutionally banned from adopting until 2010. </p>
+              <br>
+              <p>Thankfully, things have changed for the better, but let's face it, for any couple, adoption can be a daunting process. We're hoping to help change that. My husband, Nick, and I had the benefit of working with Amy Imber with Connecting Hears Adoption Services and she was instrumental in helping us adopt our son.</p>
+              <br>
+              <p>Nicholas and I discussed adopting before we were engaged to be married in 2016. We met Amy with Connecting Hearts in 2017 but agreed to wait until Nicholas completed his MBA before submitting the home study paperwork in October 2018. We were notified that we might have a potential match with a son in late spring. In June, we welcomed Sebastian into our hearts and our home, and the adoption was finalized in October 2019.</p>
+              <br>
+              <p>Our goal is to help share some of our learnings with others who are starting on their adoption journeys. While this site is for a school project, the names and contact information of the attorneys, consultants, agencies, and adoption resources are real. Only the "ads" are made up as those companies don't exist.</p>
+              <br>
+              <!-- <p>While you are here, check out the photo gallery below. Amy also helped our friends in the pictures and countless others in Florida.</p>  -->
+              <p>Oh, and if you don't think you are the target demographic for this site, rest assured that the partners listed on this site are committed to inclusivity!</p>
             </div>
+        </article>
+      </section>
 
-            <div>
-              <a href="images/JR0.jpg" data-lightbox="Click to Enlarge Pics" data-title="Daddy, Papa + Me (along with Sis) by the Water">Daddy, Papa + Me (along with Sis) by the Water</a><img src="images/JR0.jpg" alt="Daddy, Papa + Me (along with Sis) by the Water" width="600"/>
-            </div>
-
-            <div>
-              <a href="images/NMgardens.jpg" data-lightbox="Click to Enlarge Pics" data-title="Daddy, Papa + Me at the Gardens">Daddy, Papa + Me at the Gardens</a><img src="images/NMgardens.jpg" alt="Daddy, Papa + Me at the Gardens" width="600"/>
-            </div>
-
-            <div>
-              <a href="images/RR3.jpg" data-lightbox="Click to Enlarge Pics" data-title="Daddy, Papa + Me in the Living Room">Daddy, Papa + Me in the Living Room</a><img src="images/RR3.jpg" alt="Daddy, Papa + Me in the Living Room" width="600"/>
-            </div>
-
-            <div>
-              <a href="images/NMbday.jpg" data-lightbox="Click to Enlarge Pics" data-title="Daddy, Papa + Me on my 1st Birthday">Daddy, Papa + Me on my 1st Birthday</a><img src="images/NMbday.jpg" alt="Daddy, Papa + Me on my 1st Birthday" width="600"/>
-            </div>
-
-            <div>
-              <a href="images/RR1.jpg" data-lightbox="Click to Enlarge Pics" data-title="Daddy, Papa + Me on the Couch">Daddy, Papa + Me on the Couch</a><img src="images/RR1.jpg" alt="Daddy, Papa + Me on the Couch" width="600"/>
-            </div>
-
-            <div>
-              <a href="images/JR1.jpg" data-lightbox="Click to Enlarge Pics" data-title="Daddy, Papa + Me (along with Sis) on the Avenue">Daddy, Papa + Me (along with Sis) on the Avenue</a><img src="images/JR1.jpg" alt="Daddy, Papa + Me (along with Sis) on the Avenue" width="600"/>
-            </div>
-
-            <div>
-              <a href="images/NMslide.jpg" data-lightbox="Click to Enlarge Pics" data-title="Daddy, Papa + Me on the Slide">Daddy, Papa + Me on the Slide</a><img src="images/NMslide.jpg" alt="Daddy, Papa + Me on the Slide" width="600"/>
-            </div>
-
-            <div>
-              <a href="images/RR0.jpg" data-lightbox="Click to Enlarge Pics" data-title="Daddy, Papa + Me on Gotcha Day">Daddy, Papa + Me on Gotcha Day</a><img src="images/RR0.jpg" alt="Daddy, Papa + Me on Gotcha Day" width="600"/>
-            </div>
-          </div>
-        </section>
-
-        <section class="about">
-          <h2>About Us</h2>
-          <div class="courthouse">
-            <figure>
-              <img src="images/NMcourthouse.jpg" alt="Emmanuel, Nicholas, Sebastian and the Judge at the Courthouse on Gotcha Day!" width="450" />
-              <figcaption>A picture with the Judge on Gotcha Day!</figcaption>
-            </figure>
-          </div>
-          <p>Nicholas ("Daddy") is originally from the Upper Penninsula of Michigan and works for a major theme park in Central Florida. I'm Emmanuel or "Papa".  I'm a native Floridian and currently enrolled in the UF Masters in Mass Communications program with a specialization in Web Design and Online Communication. Nicholas and I met through the Orlando Gay Chorus, where we were both performers.</p>
-          <br>
-          <p>Nicholas and I discussed adopting before we were engaged to be married in 2016. We met Amy with Connecting Hearts in 2017 but agreed to wait until Nicholas completed his MBA before submitting the home study paperwork in October 2018. We were notified that we might have a potential match with a son in late spring. In June, we welcomed Sebastian into our hearts and our home, and the adoption was finalized in October 2019.</p>
-        </section>
-      </div>
     </main>
 
-    <footer>
-      <img class="align-left small" src="images/dpm-brandmark.jpg" alt="Daddy, Papa + Me brandmark" />
-      <div class="left-footer-container">
-        <nav class="footer-nav">
-          <p>Quick Navigation Menu</p>
-          <ul>
-            <li class="footer-item"><a href="#index.html">About Us</a></li>
-            <li class="footer-item"><a href="partners.html">Partners</a></li>
-            <li class="footer-item"><a href="faq.html">FAQ</a></li>
-            <li class="footer-item"><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
+    <aside>
+      <!-- <h2>About Us</h2> -->
+      <figure class="aside-figures">
+            <img src="images/DaddySwing.jpg" alt="Daddy with Sebastian playing on swing" />
+          <figcaption>Nicholas ("Daddy") is originally from the Upper Penninsula of Michigan and works for Universal Orlando Resort </figcaption>
+        </figure>
 
-      <div class="right-footer-container">
-        <p>Website by: Emmanuel J. Agon Kresky</p>
-        <p><a href="tel:407-225-2127">407-225-2127</a> | <a href="mailto:ejkragon@gmail.com">Email Me</a></p>
+      <br>
+        <figure class="aside-figures">
+          <img src="images/PapaButterfly.jpg" alt="Papa with Sebastian in front of a butterfly sculpture" />
+          <figcaption>Emmanuel ("Papa") is a native Floridian and is studying Web Design at UF through the Disney Aspire Program </figcaption>
+        </figure>
 
-        <p> Follow me:</p>
-          <a href="https://www.facebook.com/manny.agon" target="_blank"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://www.instagram.com/mannyagon/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-          <a href="https://twitter.com/mannyagon" target="_blank"><i class="fab fa-twitter-square"></i></a>
-      </div>
+    </aside>
+  </div>
 
 
+  <footer>
+    <img class="align-left small" src="images/dpm-logo.png" alt="Daddy, Papa + Me brandmark" />
+      <p>Quick Navigation Menu</p>
+        <ul>
+          <li class="footer-item"><a href="index.html">About Us | </a></li>
+          <li class="footer-item"><a href="partners.html">Partners |</a></li>
+          <li class="footer-item"><a href="faq.html">FAQ |</a></li>
+          <li class="footer-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      <br>
+      <p>Website by: Emmanuel J. Agon Kresky</p>
+      <p><a href="tel:407-225-2127">407-225-2127</a> | <a href="mailto:ejkragon@gmail.com">Email Me</a></p>
+      <br>
+      <p> Follow me:</p>
+        <a href="https://www.facebook.com/manny.agon" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/mannyagon/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/mannyagon" target="_blank"><i class="fab fa-twitter-square"></i></a>
+  </footer>
 
-    </footer>
-    <script src="lightbox/src/js/lightbox.js"></script>
+  <!-- </div> -->
+
+    <!-- <script src="lightbox/src/js/lightbox.js"></script> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
+
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>

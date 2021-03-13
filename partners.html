@@ -14,6 +14,11 @@
     <title>Daddy, Papa + Me Partners</title>
 
     <meta charset="utf-8" />
+
+    <!--RWD-->
+    <meta name="viewport" content="width=device, initial-scale=1">
+
+    <!--SEO-->
     <meta name="keywords" content="partners, Florida, adoption, recommendations, home study, attorneys, consultants, agencies, resources" />
     <meta name="description" content="Daddy, Papa + Me provides a list of home study and adoption services, adoption attorneys, consultants, agencies and resources." />
 
@@ -26,171 +31,214 @@
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/d6cf7dbe19.js" crossorigin="anonymous"></script>
 
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/scripts/js" type="text/javascript"></script>
+
+
+
   </head>
 
-  <body>
+  <body class="site">
+
     <header>
-      <div class="logo-container">
-        <a href="index.html">
-          <img class="center" src="images/dpm-logo-horizontal.jpg" alt="Daddy, Papa + Me Logo" />
-        </a>
-      </div>
+      <a href="index.html" ></a><img class="logo" src="images/dpm-logo-horizontal.jpg" alt="Daddy, Papa + Me Logo" />
+
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+
+      <nav class="hamburger-menu">
+        <ul>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
 
       <nav class="menu">
         <ul>
-          <li class="menu-item"><a href="index.html">About Us</a></li>
-          <li class="menu-item"><a href="partners.html">Partners<i class="fas fa-angle-double-down"></i></a>
-            <ul class="sub-menu">
-              <li class="menu-item"><a href="#home-study">Home Study</a></li>
-              <li class="menu-item"><a href="#attorneys">Attorneys</a></li>
-              <li class="menu-item"><a href="#consultants">Consultants</a></li>
-              <li class="menu-item"><a href="#agencies">Agencies</a></li>
-              <li class="menu-item"><a href="#adoption-resources">Adoption Resources</a></li>
-            </ul>
-          <li class="menu-item"><a href="faq.html">FAQ</a></li>
-          <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <div class="partner-container">
-        <section class="partners" id="partners">
-          <h1>Partners</h1>
-          <p>The following is a list of partners that were recommended to us when we were planning for adoption.</p>
+  <div class="desktop-flex site-content">
+
+      <div class="partner-intro">
+          <p>This is a list of partners that were recommended to us when we were planning for adoption. We know the decision process can be daunting, so we thought this might help you with your own journey!</p>
           <br>
           <p>I purposefully listed Amy at Connecting Hearts first as a home study should be your very first step on your Adoption Journey, whether you decide to work with attorneys, consultants, or agencies!</p>
           <br>
+          <p>To help differentiate the partners, Connecting Hearts and other <span class="orange-reverse">Home Study partners have an orange border,</span><span class="yellow-reverse">Adoption Attorneys have a yellow border,</span><span class="green-reverse">Adoption Consultants have a green border,</span><span class="blue-reverse">Adoption Agencies have a blue border,</span><span class="purple-reverse"> and Adoption Resources have a purple border</span></p>
+          <br>
+          <p>What's the difference between attorneys, consultants, and agencies?<p>
+          <br>
+          <p><span class="yellow-reverse"><em>Adoption Attorneys</em> are professionals that take care of the legal side of adoption, like walking prospective birth parents through the consent paperwork and helping adoptive parents finalize their adoption in court, and will help you complete a successful adoption. Those listed on this page will also help match prospective parents with birth mothers.</span></p>
+          <br>
+          <p><span class="green-reverse"><em>Adoption Consultants</em> are experts who know the ins-and-outs of the process. They can help navigate the system, make the best possible decisions, and network with those who work with birth parents.</span></p>
+          <br>
+          <p><span class="blue-reverse"><em>Adoption Agencies</em> are the intermediaries in most adoptive journeys. Agencies facilitate adoptions and are in service of both birth parents and hopeful adoptive parents</span></p>
+          <br>
           <p>To be linked to the partners' websites, click on their icons or names. </p>
-        </section>
+      </div>
 
-        <section class="home-study" id="home-study">
-          <h2>Home Study Adoption Services</h2>
-          <div class="home-study-services">
-            <a href="https://connectingheartsadoption.com/" target="_blank">Connecting Hearts<img class=align-left src="images/home-study-connecting-hearts.jpg" alt="Connecting Hearts" title="Connecting Hearts" /></a>
-            <p>Connecting Hearts Adoption Services offers Florida domestic adoption home studies as well as interstate adoption services, post placement visits, and referrals to reputable Florida adoption agencies and attorneys.  Serving families throughout Florida.</p>
-          </div>
-        </section>
 
-        <section class="attorneys" id="attorneys">
-          <h2>Adoption Attorneys</h2>
-          <p>Adoption Attorneys are professionals that take care of the legal side of adoption, like walking prospective birth parents through the consent paperwork and helping adoptive parents finalize their adoption in court, and will help you complete a successful adoption. Those listed below will also help match prospective parents with birth mothers.</p>
-          <br>
-          <div class="attorney">
-            <a href="https://www.quarles.com/cheryl-r-payne/" target="_blank">Cheryl Payne<img class=align-left src="images/attorney-cheryl-payne.jpg" alt="Cheryl Payne" title="Cheryl Payne" width="175"/></a>
-            <p>Cheryl Payne focuses her practice on adoption law, providing the legal education, guidance and services that the prospective adoptive parent, stepparent, grandparent, or other family relative needs to successfully adopt newborns, toddlers, and adults. She also assists clients who wish to domesticate foreign adoptions. Cheryl has an extensive and successful track record in providing Florida's adoptive parents with an immeasurable depth of passion, empathy, and compassion throughout the family-building process, as well as providing them with the legal protection needed. Most of her adoptions involve bringing children from outside the state of Florida into their new homes within the state.</p>
+      <div class="partner-container">
+
+        <section class="partners">
+
+          <div class="home-study">
+            <div class="home-study-img">
+              <a href="https://connectingheartsadoption.com/" target="_blank"><img src="images/home-study-connecting-hearts.jpg" alt="Connecting Hearts" title="Connecting Hearts" /></a>
+            </div>
+            <div class="home-study-content">
+              <p><span class="orange-reverse">Connecting Hearts Adoption Services</span> offers Florida domestic adoption home studies as well as interstate adoption services, post placement visits, and referrals to reputable Florida adoption agencies and attorneys.  Serving families throughout Florida.</p>
+            </div>
           </div>
 
-          <div class="attorney">
-            <a href="https://elizabethschwartz.com/" target="_blank">Elizabeth Schwartz<img class=align-left src="images/attorney-elizabeth-schwartz.jpg" alt="Elizabeth Schwartz" title="Elizabeth Schwartz" width="175" /></a>
-            <p>Elizabeth Schwartz is a nationally recognized advocate for the legal rights of the lesbian, gay, bisexual and transgender (LGBT) community. While her firm equally works with straight and gay clients in matters of family law, estate planning and probate, she has been at the forefront of providing crucial legal protections for LGBT families. She lectures locally, nationally and internationally about critical topics including the impact of nationwide marriage equality and the continued importance of LGBT couples protecting their loved ones through estate planning, stepparent and second parent adoption. She focuses her practice in family formation, including adoption, insemination, and surrogacy.</p>
+          <div class="attorneys">
+            <div class="attorney-img">
+              <a href="https://www.quarles.com/cheryl-r-payne/" target="_blank"><img src="images/attorney-cheryl-payne.jpg" alt="Cheryl Payne" title="Cheryl Payne" ></a>
+            </div>
+            <div class="attorney-content">
+              <p><span class="yellow-reverse">Cheryl Payne</span> focuses her practice on adoption law, providing the legal education, guidance and services that the prospective adoptive parent, stepparent, grandparent, or other family relative needs to successfully adopt newborns, toddlers, and adults. She also assists clients who wish to domesticate foreign adoptions. Cheryl has an extensive and successful track record in providing Florida's adoptive parents with an immeasurable depth of passion, empathy, and compassion throughout the family-building process, as well as providing them with the legal protection needed. Most of her adoptions involve bringing children from outside the state of Florida into their new homes within the state.</p>
+            </div>
           </div>
 
-          <div class="attorney">
-            <a href="https://adoptionandsurrogacy.com/" target="_blank">Hausmann & Hickman, P.A.<img class=align-left src="images/attorney-adoptionsurrogacy.jpg" alt="Adoption & Surrogacy" title="Adoption & Surrogacy" /></a>
-            <p>Adoption & Surrogacy is a resource operated through the law offices of Hausmann & Hickman, P.A. Michelle Hausmann and Amy Hickman are Florida Bar Board Certified Adoption Lawyers who specialize in adoption and who focus on reproductive law. The services they provide include private placement adoption, intervention in dependency proceedings, and legal representation in various areas of reproductive law.</p>
-          </div>
-        </section>
-
-        <section class="consultants" id="consultants">
-          <h2>Adoption Consultants</h2>
-          <p>Adoption consultants are experts who know the ins-and-outs of the process. They can help navigate the system, make the best possible decisions, and network with those who work with birth parents.</p>
-          <br>
-          <div class="consultant">
-            <a href="https://astepaheadadoption.com/" target="_blank">A Step Ahead Adoption<img class=align-left src="images/consultant-astepahead.jpg" alt="A Step Ahead" title="A Step Ahead" /></a>
-            <p>A Step Ahead Adoption educates future parents via workshops, video conferencing, and more. Their consultants answer questions and assist with decisions and paperwork. </p>
+          <div class="attorneys">
+            <div class="attorney-img">
+              <a href="https://elizabethschwartz.com/" target="_blank"><img src="images/attorney-elizabeth-schwartz.jpg" alt="Elizabeth Schwartz" title="Elizabeth Schwartz" /></a>
+            </div>
+            <div class="attorney-content">
+              <p><span class="yellow-reverse">Elizabeth Schwartz</span> is a nationally recognized advocate for the legal rights of the lesbian, gay, bisexual and transgender (LGBT) community. While her firm equally works with straight and gay clients in matters of family law, estate planning and probate, she has been at the forefront of providing crucial legal protections for LGBT families. She lectures locally, nationally and internationally about critical topics including the impact of nationwide marriage equality and the continued importance of LGBT couples protecting their loved ones through estate planning, stepparent and second parent adoption. She focuses her practice in family formation, including adoption, insemination, and surrogacy.</p>
+            </div>
           </div>
 
-          <div class="consultant">
-            <a href="https://theadoptionconsultancy.com/" target="_blank">The Adoption Consultancy<img class=align-left src="images/consultant-adoptionconsultancy.jpg" alt="Adoption Consultancy" title="Adoption Consultancy" width="125" /></a>
-            <p>The Adoption Consultancy will help you navigate what can be an overwhelming, complicated, time-consuming and frustrating process. They help avoid and overcome domestic adoption difficulties, disappointments and obstacles. They will provide the knowledge and insiders' perspective needed to overcome fears and concerns. </p>
+          <div class="attorneys">
+            <div class="attorney-img">
+              <a href="https://adoptionandsurrogacy.com/" target="_blank"><img src="images/attorney-adoptionsurrogacy.jpg" alt="Adoption & Surrogacy" title="Adoption & Surrogacy"/></a>
+            </div>
+            <div class="attorney-content">
+              <p><span class="yellow-reverse">Adoption & Surrogacy</span> is a resource operated through the law offices of Hausmann & Hickman, P.A. Michelle Hausmann and Amy Hickman are Florida Bar Board Certified Adoption Lawyers who specialize in adoption and who focus on reproductive law. The services they provide include private placement adoption, intervention in dependency proceedings, and legal representation in various areas of reproductive law.</p>
+            </div>
           </div>
 
-          <div class="consultant">
-            <a href="https://rgadoptionconsulting.com/" target="_blank">RG Adoption Consulting<img class=align-left src="images/consultant-rgadoption.jpg" alt="RG Adoption Consulting" title="RG Adoption Consulting" /></a>
-            <p>RG Adoption Consultants act as your “tour guide” through the adoption journey with expert guidance, a proven plan, and an open heart and mind. They translate adoption language so their clients never feel lost, guiding them toward the best agencies along the way, and making sure they have everything needed for a smooth and stress-free adoption journey.  </p>
-          </div>
-        </section>
-
-        <section class="agencies" id="agencies">
-          <h2>Adoption Agencies</h2>
-          <p>Adoption Agencies are the intermediaries in most adoptive journeys. Agencies facilitate adoptions and are in service of both birth parents and hopeful adoptive parents</p>
-          <br>
-          <div class="agency">
-            <a href="https://www.adoptionflorida.org/" target="_blank">ACF Adoptions<img class=align-left src="images/agency-acf.jpg" alt="ACF Adoptions" title="ACF Adoptions" /></a>
-            <p>ACF Adoptions is a private non-profit, licensed adoption agency, providing legal and social services to birth mothers and adoptive parents. Through birth parent choice, ACF Adoptions places newborn or very young children into the loving homes of adoptive parents.  </p>
+          <div class="consultants">
+            <div class="consultant-img">
+              <a href="https://astepaheadadoption.com/" target="_blank"><img src="images/consultant-astepahead.jpg" alt="A Step Ahead" title="A Step Ahead"/></a>
+            </div>
+            <div class="consultant-content">
+              <p><span class="green-reverse">A Step Ahead Adoption </span>educates future parents via workshops, video conferencing, and more. Their consultants answer questions and assist with decisions and paperwork. </p>
+            </div>
           </div>
 
-          <div class="agency">
-            <a href="https://www.heartofadoptions.com/" target="_blank">Heart of Adoptions<img class=align-left src="images/agency-heartofadoptions.jpg" alt="Heart of Adoptions" title="Heart of Adoptions" /></a>
-            <p>Heart of Adoptions works with birth parents from all over. They provide services to adoptive families, including home studies, post-placement supervision, adoption subsidies, counseling, adoption training and education, Interstate Compact (ICPC), profile creation, and foster care. </p>
+          <div class="consultants">
+            <div class="consultant-img">
+              <a href="https://theadoptionconsultancy.com/" target="_blank"><img src="images/consultant-adoptionconsultancy.jpg" alt="Adoption Consultancy" title="Adoption Consultancy" /></a>
+            </div>
+            <div class="consultant-content">
+              <p><span class="green-reverse">The Adoption Consultancy</span> will help you navigate what can be an overwhelming, complicated, time-consuming and frustrating process. They help avoid and overcome domestic adoption difficulties, disappointments and obstacles. They will provide the knowledge and insiders' perspective needed to overcome fears and concerns. </p>
+            </div>
           </div>
 
-          <div class="agency">
-            <a href="https://www.mychoiceadoptions.com/" target="_blank">My Choice Adoptions<img class=align-left src="images/agency-mychoiceadoptions.jpg" alt="My Choice Adoptions" title="My Choice Adoptions" /></a>
-            <p>My Choice Adoptions focused on expectant parents and supporting them as they make a choice that's right for them. They love talking to hopeful adoptive parents who are looking for an adoption agency or attorney who supports and empowers birth parents. </p>
-          </div>
-        </section>
-
-        <section class="adoption-resources" id="adoption-resources">
-          <h2>Adoption Resources</h2>
-          <div class="resource">
-            <a href="https://www.helpusadopt.org/" target="_blank">Helpusadopt.org<img class=align-left src="images/resources-helpusadopt.jpg" alt="Help Us Adopt" title="Help Us Adopt" /></a>
-            <p>Helpusadopt.org is a national 501(c)(3) financial grant program that helps couples/individuals (regardless of ethnicity, gender, marital status, religion, or sexual orientation) with the cost of their adoptions by awarding grants up to $15,000. They support domestic, international and foster care adoptions and do not charge applicants who apply. </p>
+          <div class="consultants">
+            <div class="consultant-img">
+              <a href="https://rgadoptionconsulting.com/" target="_blank"><img src="images/consultant-rgadoption.jpg" alt="RG Adoption Consulting" title="RG Adoption Consulting" /></a>
+            </div>
+            <div class="consultant-content">
+              <p><span class="green-reverse">RG Adoption Consultants</span> act as your “tour guide” through the adoption journey with expert guidance, a proven plan, and an open heart and mind. They translate adoption language so their clients never feel lost, guiding them toward the best agencies along the way, and making sure they have everything needed for a smooth and stress-free adoption journey.  </p>
+            </div>
           </div>
 
-          <div class="resource">
-            <a href="https://www.ourchosenchild.com/" target="_blank">Our Chosen Child<img class=align-left src="images/resources-ourchosenchild.jpg" alt="Our Chosen Child" title="Our Chosen Child" width="245"/></a>
-            <p>Our Chosen Child are Adoption Marketing Specialists! They create fully custom adoption profile books, adoption videos and websites for adoption outreach.</p>
+          <div class="agencies">
+            <div class="agency-img">
+              <a href="https://www.adoptionflorida.org/" target="_blank"><img src="images/agency-acf.jpg" alt="ACF Adoptions" title="ACF Adoptions" /></a>
+            </div>
+            <div class="agency-content">
+              <p><span class="blue-reverse">ACF Adoptions</span> is a private non-profit, licensed adoption agency, providing legal and social services to birth mothers and adoptive parents. Through birth parent choice, ACF Adoptions places newborn or very young children into the loving homes of adoptive parents.  </p>
+            </div>
+          </div>
+
+          <div class="agencies">
+            <div class="agency-img">
+              <a href="https://www.heartofadoptions.com/" target="_blank"><img src="images/agency-heartofadoptions.jpg" alt="Heart of Adoptions" title="Heart of Adoptions" /></a>
+            </div>
+            <div class="agency-content">
+              <p><span class="blue-reverse">Heart of Adoptions</span> works with birth parents from all over. They provide services to adoptive families, including home studies, post-placement supervision, adoption subsidies, counseling, adoption training and education, Interstate Compact (ICPC), profile creation, and foster care. </p>
+            </div>
+          </div>
+
+          <div class="agencies">
+            <div class="agency-img">
+              <a href="https://www.mychoiceadoptions.com/" target="_blank"><img src="images/agency-mychoiceadoptions.jpg" alt="My Choice Adoptions" title="My Choice Adoptions" /></a>
+            </div>
+            <div class="agency-content">
+              <p><span class="blue-reverse">My Choice Adoptions</span> focused on expectant parents and supporting them as they make a choice that's right for them. They love talking to hopeful adoptive parents who are looking for an adoption agency or attorney who supports and empowers birth parents. </p>
+            </div>
+          </div>
+
+          <div class="resources">
+            <div class="resource-img">
+              <a href="https://www.helpusadopt.org/" target="_blank"><img src="images/resources-helpusadopt.jpg" alt="Help Us Adopt" title="Help Us Adopt" /></a>
+            </div>
+            <div class="resource-content">
+              <p><span class="purple-reverse">Helpusadopt.org</span> is a national 501(c)(3) financial grant program that helps couples/individuals (regardless of ethnicity, gender, marital status, religion, or sexual orientation) with the cost of their adoptions by awarding grants up to $15,000. They support domestic, international and foster care adoptions and do not charge applicants who apply. </p>
+            </div>
+          </div>
+
+          <div class="resources">
+            <div class="resource-img">
+              <a href="https://www.ourchosenchild.com/" target="_blank"><img src="images/resources-ourchosenchild.jpg" alt="Our Chosen Child" title="Our Chosen Child" /></a>
+            </div>
+            <div class="resource-content">
+              <p><span class="purple-reverse">Our Chosen Child</span> are Adoption Marketing Specialists! They create fully custom adoption profile books, adoption videos and websites for adoption outreach.</p>
+            </div>
           </div>
         </section>
       </div>
 
-    <aside>
-      <img class="ad" src="images/kragon-consulting.png" alt="Kragon Consulting Ad" />
-    </aside>
 
-
-
-
-    </main>
-
+        <div class="partner-ad">
+          <figure class="aside-figures">
+            <img src="images/kragon-consulting.png" alt="Kragon Consulting Ad" />
+            <figcaption>Disclaimer: Daddy, Papa + Me receives compensation for every click of an ad</figcaption>
+          </figure>
+        </div>
+      </div>
 
     <footer>
-      <img class="align-left small" src="images/dpm-brandmark.jpg" alt="Daddy, Papa + Me brandmark" />
-      <div class="left-footer-container">
-        <nav class="footer-nav">
-          <p>Quick Navigation Menu</p>
+      <img class="align-left small" src="images/dpm-logo.png" alt="Daddy, Papa + Me brandmark" />
+        <p>Quick Navigation Menu</p>
           <ul>
-            <li class="footer-item"><a href="#index.html">About Us</a></li>
-            <li class="footer-item"><a href="partners.html">Partners</a></li>
-            <li class="footer-item"><a href="faq.html">FAQ</a></li>
+            <li class="footer-item"><a href="index.html">About Us | </a></li>
+            <li class="footer-item"><a href="partners.html">Partners |</a></li>
+            <li class="footer-item"><a href="faq.html">FAQ |</a></li>
             <li class="footer-item"><a href="contact.html">Contact Us</a></li>
           </ul>
-        </nav>
-      </div>
-
-      <div class="right-footer-container">
+        <br>
         <p>Website by: Emmanuel J. Agon Kresky</p>
         <p><a href="tel:407-225-2127">407-225-2127</a> | <a href="mailto:ejkragon@gmail.com">Email Me</a></p>
-
+        <br>
         <p> Follow me:</p>
           <a href="https://www.facebook.com/manny.agon" target="_blank"><i class="fab fa-facebook-square"></i></a>
           <a href="https://www.instagram.com/mannyagon/" target="_blank"><i class="fab fa-instagram-square"></i></a>
           <a href="https://twitter.com/mannyagon" target="_blank"><i class="fab fa-twitter-square"></i></a>
-      </div>
-
-
-
     </footer>
-    <script src="lightbox/src/js/lightbox.js"></script>
+
+      <!-- <script src="lightbox/src/js/lightbox.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>

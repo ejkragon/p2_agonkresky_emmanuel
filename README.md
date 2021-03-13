@@ -1,13 +1,33 @@
-# Project 3 - Final
+# Project 1
 
 ## Name: Emmanuel J. Agon Kresky
 
-## Semester/Course Name: Fall 2020/MMC 5277
+## Semester/Course Name: Spring 2021/COM 6338
 Web Design Principles
+
+## Notes for Heather
+I know I need to redo the menus as the hamburger is stuck in the open position.
+
+I also need to convert all of my font sizes which are still in px. 
+
+## Resources
+* Duckett, J. (2015). HTML & CSS: Design and build websites. Indianapolis, IN: John Wiley & Sons.
+* https://www.w3schools.com
+* https://codepen.io/g13nn/pen/eHGEF
+* https://developers.google.com/speed/libraries
+* https://css-tricks.com/making-width-and-flexible-items-play-nice-together/
+* https://stackoverflow.com/questions/4622808/html-changing-colors-of-specific-words-in-a-string-of-text
+* https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+
+
+
+
+
+
 
 ## I, Emmanuel J. Agon Kresky, have read the point deduction list and understand that I will lose points for missing items
 
-### Completed Checklist for Final
+### Completed Checklist
 * You must use at least one non-banner/logo image.
 * Use the LEAST amount of DIVs. - I always think I can bring this number down, but I am afraid I will break something
 * You must include at least one of each of the following HTML structure tags:
@@ -35,8 +55,3 @@ ways to use at least one (1) of them: Figure/Figcaption, Details/Summary. – fi
 *	When adding images, don’t forget to include alt, title, width/height
 *	Upload your site to your purchased hosting server
 *	Upload repo to GitHub and submit link
-
-
-## Resources
-* Duckett, J. (2015). HTML & CSS: Design and build websites. Indianapolis, IN: John Wiley & Sons.
-* https://www.w3schools.com
