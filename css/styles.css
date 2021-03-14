@@ -154,7 +154,8 @@ footer p {
   font-size: 20px;
 }
 
-footer a ul li {
+footer ul li a,
+footer p a {
     color: #3953a4;
     font-size: 18px;
     transition: .3s;
