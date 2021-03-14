@@ -177,6 +177,11 @@ footer a:hover {
     transition: .3s;
 }
 
+footer::first-line {
+  font-family: 'Noto Serif', serif;
+	font-size: 24px;
+	font-weight: bold;
+}
 /*==========================
 
   footer styling
