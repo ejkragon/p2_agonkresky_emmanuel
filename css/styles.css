@@ -865,7 +865,7 @@ aside {
   background: #ffffff;
   min-height: 100vh;
   text-align: left;
-  color: #6d6e71;
+  /* color: #6d6e71; */
 }
 
 details {
@@ -911,6 +911,10 @@ details[open] summary:before {
   content: "\f146";
 }
 
+#faq-aside {
+	background-color: #ffffff;
+}
+
 /*=====================================================
 
   CSSS3 Animation (AD/FAQ page)
@@ -928,6 +932,7 @@ details[open] summary:before {
   padding: 5px;
   box-shadow: 0 -1px 10px rgb(237 32 36/ .7);
   transform-style: inherit;
+	background-color: #ffffff;
 }
 
 @keyframes right-left {
