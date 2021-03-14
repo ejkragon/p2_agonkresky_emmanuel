@@ -24,7 +24,7 @@ header p {
 #container {
   margin: auto;
   background-color: #bdb7b7;
-  width: 1920px;
+  max-width: 1920px;
 }
 
 h1,
@@ -56,13 +56,13 @@ h4 {
   font-size: 24pt;
 }
 
-h5 {
-  font-size: 22pt;
+/* h5 {
+  font-size: 22pt; */
 }
 
-h6 {
+/* h6 {
   font-size: 20pt;
-  }
+  } */
 
 p {
   font-family: 'Noto Serif', serif;
@@ -322,7 +322,7 @@ figcaption {
 
 .partner-ad figure {
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   transition: 2s;
 }
 
@@ -468,7 +468,7 @@ figcaption {
 
 .partner-ad figure {
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   transition: 2s;
 }
 
@@ -490,7 +490,10 @@ figcaption {
 }
 
 .NMportraits {
-	max-width: 24%;
+	max-width: 22%;
+	text-align: center;
+	margin: 0 auto;
+	align-items: center;
 }
 
 .family-text {
@@ -594,7 +597,7 @@ details[open] summary:before {
   right: 0;
   bottom: -25px;
   animation: right-left 30s linear infinite normal;
-  width: 260px;
+  max-width: 260px;
   height: 410px;
   box-sizing: border-box;
   padding: 5px;
@@ -632,7 +635,7 @@ details[open] summary:before {
   padding: 20px;
   background: #ffffff;
   min-height: 100vh;
-  text-align: left;
+  text-align: center;
 }
 
 .contact-form {
@@ -657,18 +660,7 @@ details[open] summary:before {
   color: #faa41a;
 }
 
-.parent-container {
-	display: flex;
-}
 
-.p1container {
-	flex: 1;
-}
-
-.p2container {
-	flex: 1;
-	flex-direction: row;
-}
 
 
 .addresscontainer {
@@ -679,9 +671,9 @@ details[open] summary:before {
   display: block;
 }
 
-.label {
+/* .label {
   font-weight: bold;
-}
+} */
 
 .reset input,
 .submit input {
@@ -717,9 +709,12 @@ textarea {
 }
 
 .select {
-  width: 185px;
+  max-width: 200px;
   padding: 8px 0;
 }
+
+
+
 
 /********************************* start media query 500px *********************/
 
@@ -759,6 +754,19 @@ textarea {
 		margin-right: 0;
 	}
 
+	.parent-container {
+		display: flex;
+	}
+
+	.p1container {
+		flex: 1;
+	}
+
+	.p2container {
+		flex: 1;
+		flex-direction: row;
+	}
+
 
 }
 
@@ -769,7 +777,7 @@ textarea {
 @media (min-width: 760px) {
 
   #container {
-    width: 760px;
+    max-width: 760px;
   }
 
   aside {
@@ -794,7 +802,7 @@ textarea {
 @media (min-width: 960px) {
 
   #container {
-    width: 960px;
+    max-width: 960px;
   }
 
   .desktop-flex {
@@ -991,7 +999,7 @@ textarea {
 @media (min-width: 1200px) {
 
   #container {
-    width: 1200px;
+    max-width: 1200px;
   }
 
   .logo {
