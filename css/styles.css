@@ -818,6 +818,7 @@ aside {
 .family {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 }
 
 .NMportraits {
@@ -833,6 +834,21 @@ aside {
 	flex: 2;
 	padding: 25px;
 }
+
+.friends {
+	text-align: center;
+}
+
+.friends p {
+	padding-bottom: 25px;
+}
+
+.bx-wrapper {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
 
 /*========================================================
 

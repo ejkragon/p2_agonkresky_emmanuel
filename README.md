@@ -19,6 +19,8 @@ I also need to convert all of my font sizes which are still in px.
 * https://stackoverflow.com/questions/4622808/html-changing-colors-of-specific-words-in-a-string-of-text
 * https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
 * https://lokeshdhakar.com/projects/lightbox2/
+* https://bxslider.com/install/
+
 
 
 
