@@ -989,11 +989,23 @@ details[open] summary:before {
   color: #faa41a;
 }
 
+.parent-container {
+	display: flex;
+}
+
+.p1container {
+	flex: 1;
+}
+
 .p2container {
+	flex: 1;
+	flex-direction: row;
+}
+/* .p2container {
   position: absolute;
   margin-top: -364px;
   margin-left: 442px;
-}
+} */
 
 .addresscontainer {
   text-align: center;

@@ -14,6 +14,13 @@
     <title>Daddy, Papa + Me Contact Us</title>
 
     <meta charset="utf-8" />
+
+    <!--RWD-->
+    <meta name="viewport" content="width=device, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--SEO-->
     <meta name="keywords" content="adoption, contact form, home study, attorneys, consultants, agencies" />
     <meta name="description" content="Daddy, Papa + Me is a website created to help guide Gay Couples in Florida through the Infant Adoption Process. Contact us today!" />
 
@@ -25,31 +32,47 @@
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/d6cf7dbe19.js" crossorigin="anonymous"></script>
 
   </head>
 
-  <body>
+  <body class="site">
+
     <header>
-      <div class="logo-container">
-        <a href="index.html">
-          <img class="center" src="images/dpm-logo-horizontal.jpg" alt="Daddy, Papa + Me Logo" />
-        </a>
-      </div>
+
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+
+      <a href="index.html" ></a><img class="logo" src="images/dpm-logo-horizontal.jpg" alt="Daddy, Papa + Me Logo" />
 
       <nav class="menu">
         <ul>
-          <li class="menu-item"><a href="index.html">About Us</a></li>
-          <li class="menu-item"><a href="partners.html">Partners</a></li>
-          <li class="menu-item"><a href="faq.html">FAQ</a></li>
-          <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
+
+  <!-- start new flexbox nav -->
+
+      <nav class="flexbox-nav">
+        <ul>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+
+  <!-- end new flex box nav menu -->
+
     </header>
 
     <main>
@@ -57,50 +80,52 @@
         <h3>Please Contact Us using the form below:</h3>
         <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
 
-          <h4>Parents Contact Information</h4>
-          <div class="p1container">
-            <h5>Parent #1</h5>
-            <div class="p1-first-name input-section">
-              <label for="p1firstname" class="label_input_wrap">Parent1 First Name:</label>
-              <input type="text" name="req_p1firstname" id="p1firstname" placeholder="Parent1 First Name" />
+        <h4>Parents Contact Information</h4>
+          <div class="parent-container">
+            <div class="p1container">
+              <h5>Parent #1</h5>
+              <div class="p1-first-name input-section">
+                <label for="p1firstname" class="label_input_wrap">Parent1 First Name:</label>
+                <input type="text" name="req_p1firstname" id="p1firstname" placeholder="Parent1 First Name" />
+              </div>
+
+              <div class="p1-last-name input-section">
+                <label for="p1lastname" class="label_input_wrap">Parent1 Last Name:</label>
+                <input type="text" name="req_p1lastname" id="p1lastname" placeholder="Parent1 Last Name" />
+              </div>
+
+              <div class="p1-e-mail input-section">
+                <label for="p1email" class="label_input_wrap">Parent1 Email:</label>
+                <input type="email" name="req_p1email" id="p1email" placeholder="Parent1 Email" />
+              </div>
+
+              <div class="p1-telephone input-section">
+                <label for="p1telephone" class="label_input_wrap">Parent1 Telephone:</label>
+                <input type="tel" name="req_p1telephone" id="p1telephone" placeholder="Parent1 Telephone" />
+              </div>
             </div>
 
-            <div class="p1-last-name input-section">
-              <label for="p1lastname" class="label_input_wrap">Parent1 Last Name:</label>
-              <input type="text" name="req_p1lastname" id="p1lastname" placeholder="Parent1 Last Name" />
-            </div>
+            <div class="p2container">
+              <h5>Parent #2</h5>
+              <div class="p2-first-name input-section p2">
+                <label for="p2firstname" class="label_input_wrap">Parent2 First Name:</label>
+                <input type="text" name="p2firstname" id="p2firstname" placeholder="Parent2 First Name" />
+              </div>
 
-            <div class="p1-e-mail input-section">
-              <label for="p1email" class="label_input_wrap">Parent1 Email:</label>
-              <input type="email" name="req_p1email" id="p1email" placeholder="Parent1 Email" />
-            </div>
+              <div class="p2-last-name input-section p2">
+                <label for="p2lastname" class="label_input_wrap">Parent2 Last Name:</label>
+                <input type="text" name="p2lastname" id="p2lastname" placeholder="Parent2 Last Name" />
+              </div>
 
-            <div class="p1-telephone input-section">
-              <label for="p1telephone" class="label_input_wrap">Parent1 Telephone:</label>
-              <input type="tel" name="req_p1telephone" id="p1telephone" placeholder="Parent1 Telephone" />
-            </div>
-          </div>
+              <div class="p2-e-mail input-section p2">
+                <label for="p2email" class="label_input_wrap">Parent2 Email:</label>
+                <input type="email" name="p2email" id="p2email" placeholder="Parent2 Email" />
+              </div>
 
-          <div class="p2container">
-            <h5>Parent #2</h5>
-            <div class="p2-first-name input-section p2">
-              <label for="p2firstname" class="label_input_wrap">Parent2 First Name:</label>
-              <input type="text" name="p2firstname" id="p2firstname" placeholder="Parent2 First Name" />
-            </div>
-
-            <div class="p2-last-name input-section p2">
-              <label for="p2lastname" class="label_input_wrap">Parent2 Last Name:</label>
-              <input type="text" name="p2lastname" id="p2lastname" placeholder="Parent2 Last Name" />
-            </div>
-
-            <div class="p2-e-mail input-section p2">
-              <label for="p2email" class="label_input_wrap">Parent2 Email:</label>
-              <input type="email" name="p2email" id="p2email" placeholder="Parent2 Email" />
-            </div>
-
-            <div class="p2-telephone input-section p2">
-              <label for="p2telephone" class="label_input_wrap">Parent2 Telephone:</label>
-              <input type="tel" name="p2telephone" id="p2telephone" placeholder="Parent2 Telephone" />
+              <div class="p2-telephone input-section p2">
+                <label for="p2telephone" class="label_input_wrap">Parent2 Telephone:</label>
+                <input type="tel" name="p2telephone" id="p2telephone" placeholder="Parent2 Telephone" />
+              </div>
             </div>
           </div>
 
@@ -187,32 +212,25 @@
     </main>
 
     <footer>
-      <img class="align-left small" src="images/dpm-brandmark.jpg" alt="Daddy, Papa + Me brandmark" />
-      <div class="left-footer-container">
-        <nav class="footer-nav">
-          <p>Quick Navigation Menu</p>
+      <img class="align-left small" src="images/dpm-logo.png" alt="Daddy, Papa + Me brandmark" />
+        <p>Quick Navigation Menu</p>
           <ul>
-            <li class="footer-item"><a href="#index.html">About Us</a></li>
-            <li class="footer-item"><a href="partners.html">Partners</a></li>
-            <li class="footer-item"><a href="faq.html">FAQ</a></li>
+            <li class="footer-item"><a href="index.html">About Us | </a></li>
+            <li class="footer-item"><a href="partners.html">Partners |</a></li>
+            <li class="footer-item"><a href="gallery.html">Gallery |</a></li>
+            <li class="footer-item"><a href="faq.html">FAQ |</a></li>
             <li class="footer-item"><a href="contact.html">Contact Us</a></li>
           </ul>
-        </nav>
-      </div>
-
-      <div class="right-footer-container">
+        <br>
         <p>Website by: Emmanuel J. Agon Kresky</p>
         <p><a href="tel:407-225-2127">407-225-2127</a> | <a href="mailto:ejkragon@gmail.com">Email Me</a></p>
-
+        <br>
         <p> Follow me:</p>
           <a href="https://www.facebook.com/manny.agon" target="_blank"><i class="fab fa-facebook-square"></i></a>
           <a href="https://www.instagram.com/mannyagon/" target="_blank"><i class="fab fa-instagram-square"></i></a>
           <a href="https://twitter.com/mannyagon" target="_blank"><i class="fab fa-twitter-square"></i></a>
-      </div>
-
-
-
     </footer>
+
     <script src="lightbox/src/js/lightbox.js"></script>
   </body>
 </html>
