@@ -52,17 +52,19 @@ h6 {
   font-family: 'Noto Serif', serif;
 }
 
+
+
 h4 {
   font-size: 24pt;
 }
 
-/* h5 {
-  font-size: 22pt; */
+h5 {
+  font-size: 20pt;
 }
 
-/* h6 {
-  font-size: 20pt;
-  } */
+h6 {
+  font-size: 18pt;
+  }
 
 p {
   font-family: 'Noto Serif', serif;
@@ -192,9 +194,9 @@ footer::first-line {
 .logo {
   display: block;
   margin: auto;
-  width: 100%;
+  width: 98%;
   background-color: #ffffff;
-  padding: 25px 1rem 0 1rem;
+  padding: 25px 0 0 0;
 }
 
 
@@ -527,17 +529,32 @@ figcaption {
 
 ==========================================================*/
 
+/* .container-ad {
+	display: flex;
+} */
+
 .faq-container {
-  border: 0;
+	/* flex: 3; */
+	border: 0;
   box-sizing: border-box;
-  margin: 50px auto 100px;
-  max-width: 900px;
-  padding: 20px;
+  margin: 50px;
+  /* max-width: 900px; */
+  /* padding: 20px; */
   background: #ffffff;
   min-height: 100vh;
   text-align: left;
   /* color: #6d6e71; */
 }
+
+/* .faq-aside {
+	flex-direction: row;
+} */
+
+
+/* .faq-aside figure {
+	padding-top: 50px;
+	text-align: center;
+} */
 
 details {
   border: 1px solid black;
@@ -557,7 +574,7 @@ summary:hover {
 }
 
 details p {
-  padding: 15px 25px 10px;
+  padding: 15px 0 10px 0;
 }
 
 summary::-webkit-details-marker {
@@ -582,44 +599,52 @@ details[open] summary:before {
   content: "\f146";
 }
 
-#faq-aside {
+.faq-aside {
 	background-color: #ffffff;
+	margin: 0 auto;
 }
 
 /*=====================================================
 
-  CSSS3 Animation (AD/FAQ page)
+	START CSSS3 Animation (AD/FAQ page)
 
 ======================================================*/
 
 .faq-ad {
-  position: relative;
-  right: 0;
-  bottom: -25px;
-  animation: right-left 30s linear infinite normal;
-  max-width: 260px;
-  height: 410px;
-  box-sizing: border-box;
-  padding: 5px;
-  box-shadow: 0 -1px 10px rgb(237 32 36/ .7);
-  transform-style: inherit;
+	/* position: relative;
+	right: 0;
+	bottom: -25px;
+	animation: right-left 30s linear infinite normal; */
+	max-width: 260px;
+	max-height: 410px;
+	box-sizing: border-box;
+	text-align: center;
+	/* padding: 5px; */
+	/* box-shadow: 0 -1px 10px rgb(237 32 36/ .7);
+	transform-style: inherit; */
 	background-color: #ffffff;
 }
 
-@keyframes right-left {
-  from {
-    left: 120%;
-  }
-  to{
-    left: -20%;
-  }
-}
+/* @keyframes right-left {
+	from {
+		left: 100%;
+	}
+	to{
+		left: 0%;
+	}
+} */
 
 .red-italics {
-  color: #ed2024;
-  font-size: 12px;
-  font-style: italic;
+	color: #ed2024;
+	font-size: 12px;
+	font-style: italic;
 }
+
+/*=====================================================
+
+	END CSSS3 Animation (AD/FAQ page)
+
+======================================================*/
 
   /*======================================================
 
@@ -632,7 +657,7 @@ details[open] summary:before {
   box-sizing: border-box;
   margin: 50px auto 100px;
   max-width: 900px;
-  padding: 20px;
+  /* padding: 20px; */
   background: #ffffff;
   min-height: 100vh;
   text-align: center;
@@ -640,7 +665,7 @@ details[open] summary:before {
 
 .contact-form {
   background: #3953a4;
-  padding: 20px;
+  /* padding: 20px; */
   max-width: 750px;
   color: #f7ec13;
   margin: 20px auto;
@@ -754,6 +779,8 @@ textarea {
 		margin-right: 0;
 	}
 
+
+
 	.parent-container {
 		display: flex;
 	}
@@ -792,6 +819,10 @@ textarea {
     padding: 5px;
   }
 
+	.faq-container {
+		max-width: 760px;
+		margin: 50px auto;
+	}
 
 
 
@@ -1171,6 +1202,9 @@ textarea {
   align-self: center;
   padding-left: 1rem;
 }
+
+/
+
 
 }
 /********************************* end media query 1200px *********************/
