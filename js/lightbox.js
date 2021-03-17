@@ -552,3 +552,9 @@
 
   return new Lightbox();
 }));
+
+<script>
+  lightbox.option ({
+    'positionFromTop': 5000;
+  })
+</script>
